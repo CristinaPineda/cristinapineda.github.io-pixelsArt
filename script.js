@@ -13,7 +13,7 @@ function newColors() {
 
 // gera paleta de cores
 function paleteColors() {
-  const colors = ['black', newColors(), newColors(), newColors()];
+  const colors = ['black', newColors(), newColors(), newColors(), newColors(), newColors(), newColors(), newColors(),];
   for (let index = 0; index < elementColor.length; index += 1) {
     elementColor[index].style.backgroundColor = colors[index];
   }
