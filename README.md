@@ -52,4 +52,4 @@ Projeto desenvolvido no módulo de fundamentos Web da Trybe
 - Para alterar alguma propriedade do _CSS_ de um elemento através do _JavaScript_, dê uma olhada no [atributo `style`](https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp) do elemento.
 
 
-Link: https://cristinapineda.github.io/cristinapineda.github.io-pixelsArt/
+Link: https://cristinapineda.github.io/pixelsArt/
