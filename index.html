@@ -4,35 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     
-    <title>Project Pixels Art</title>
+    <title>Pixels Art</title>
   </head>
 
-  <body id="body">
-    <div id="imagebkg">
-      <header id="header">
-        <h1 id="title">Paleta de Cores</h1>
+  <body class="body">
+    <div class="main-body">
+      <header class="header">
+        <h1 class="title">Pixels Art</h1>
       </header>
 
-      <ul id="color-palette">
-        <li class="color selected"></li>
-        <li class="color"></li>
-        <li class="color"></li>
-        <li class="color"></li>
-      </ul>
-
-      <input id="board-size" type="number" min="5" max="50">
-      <button id="generate-board">#VQV</button>
-      
-      <button id="clear-board">Limpar</button>
-
-      <table id="pixel-board"></table>
+      <div>
+        <ul class="color-palette">
+          <li class="color selected"></li>
+          <li class="color"></li>
+          <li class="color"></li>
+          <li class="color"></li>
+        </ul>
+      </div>
+      <div class="btn-board">
+        <div class="btn">
+          <div class="input">
+            <label for="#board-size">Board size:</label>
+            <input class="btns" id="board-size" type="number" min="5" max="50">
+            <button class="btns" id="generate-board">New Board</button>
+          </div>
+          <div>
+            <button class="btns"id="clear-board">Clear</button>
+            <button class="btns"id="restart-board" onClick="window.location.reload();">Restart</button>
+          </div>
+        </div>
+        <table id="pixel-board"></table>
+      </div>
 
       <footer>
-        <p id="footer">by CristinaPineda</p>
+        <p class="footer">by CristinaPineda</p>
       </footer>
-      <script src="./script.js"></script>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
