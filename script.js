@@ -86,3 +86,4 @@ buttonClick.addEventListener('click', () => {
     pixe[pix].style.backgroundColor = '';
   }
 });
+// teste de editor online do github
