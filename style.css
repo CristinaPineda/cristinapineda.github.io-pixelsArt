@@ -19,6 +19,23 @@ body {
   font-size: 22px;
 }
 
+.colors-set {
+  align-items: center;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.get {
+  background-color: coral;
+}
+
+.get:hover {
+  background-color: crimson;
+}
+
 .color-palette {
   align-items: center;
   display: flex;
@@ -43,7 +60,7 @@ body {
 
 .btn-board {
   align-items: center;
-  color: beige;
+  color: black;
   display: flex;
   font-weight: 600;
   flex-direction: column;
@@ -81,16 +98,17 @@ table {
 .pixel {
   background-color: white;
   border: 1px solid gray;
+  cursor: pointer;
   height: 40px;
   width: 40px;
 }
 
-#board-size {
+#board-size, #set-colors {
   background-color: whitesmoke;
   color: black;
 }
 
-#board-size:hover {
+#board-size:hover, #set-colors:hover{
   background-color: thistle;
 }
 
