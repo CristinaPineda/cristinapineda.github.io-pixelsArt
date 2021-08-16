@@ -11,12 +11,15 @@ function newColors() {
   return `rgb(${rgb1}, ${rgb2}, ${rgb3})`;
 }
 
+// numero da paleta de cores
 function numberColors() {
+  const fatherLi = document.querySelector('.color-palette');
+  fatherLi.innerHTML = "";
   const numberColors = document.querySelector('#set-colors').value;
+  parseInt(numberColors);
   for(let index = 0; index < numberColors; index += 1) {
     const createLi = document.createElement('li');
     createLi.className = 'color';
-    const fatherLi = document.querySelector('.color-palette');
     fatherLi.appendChild(createLi);
   }
 }
