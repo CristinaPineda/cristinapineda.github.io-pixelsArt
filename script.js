@@ -20,6 +20,7 @@ function numberColors() {
   for(let index = 0; index < numberColors; index += 1) {
     const createLi = document.createElement('li');
     createLi.className = 'color';
+    createLi.style.backgroundColor = newColors();
     fatherLi.appendChild(createLi);
   }
 }
@@ -27,19 +28,12 @@ const buttonGet = document.querySelector('.get');
 buttonGet.addEventListener('click', () => numberColors());
 
 // gera paleta de cores
-// function paleteColors() {
-//   const numberColors = document.querySelector('#set-colors').value
-//   const colors = [];
-//   colors.length = numberColors;
-//   for (let index = 0; index < elementColor.length; index += 1) {
-//     elementColor[index].style.backgroundColor = colors[index];
-//   }
-//   for (let index = 0; index < elementColor.length; index += 1) {
-//     elementColor[index].addEventListener('click', colorSelect);
-//   }
-// }
-// const buttonGet = document.querySelector('.get');
-// buttonGet.addEventListener('click', paleteColors());
+function paleteColors() {
+  for (let index = 0; index < elementColor.length; index += 1) {
+    elementColor[index].addEventListener('click', colorSelect);
+  }
+}
+paleteColors();
 
 // insere classe selecionada
 function colorSelect(event) {
