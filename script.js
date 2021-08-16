@@ -17,7 +17,7 @@ function numberColors() {
   fatherLi.innerHTML = "";
   const numberColors = document.querySelector('#set-colors').value;
   parseInt(numberColors);
-  for(let index = 0; index < numberColors; index += 1) {
+  for(let index = 1; index <= numberColors; index += 1) {
     const createLi = document.createElement('li');
     createLi.className = 'color';
     createLi.style.backgroundColor = newColors();
