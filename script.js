@@ -22,18 +22,20 @@ function numberColors() {
     createLi.className = 'color';
     createLi.style.backgroundColor = newColors();
     fatherLi.appendChild(createLi);
+    const selected = document.getElementsByTagName('li')[0];
+    selected.className = 'selected color'
   }
 }
 const buttonGet = document.querySelector('.get');
 buttonGet.addEventListener('click', () => numberColors());
+// elementColor.addEventListener('click', () => colorSelect());
 
 // gera paleta de cores
-function paleteColors() {
-  for (let index = 0; index < elementColor.length; index += 1) {
-    elementColor[index].addEventListener('click', colorSelect);
-  }
-}
-paleteColors();
+// function paleteColors() {
+  //   for (let index = 0; index < elementColor.length; index += 1) {
+    //   }
+    // }
+// paleteColors();
 
 // insere classe selecionada
 function colorSelect(event) {
