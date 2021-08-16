@@ -23,19 +23,12 @@ function numberColors() {
     createLi.style.backgroundColor = newColors();
     fatherLi.appendChild(createLi);
     const selected = document.getElementsByTagName('li')[0];
-    selected.className = 'selected color'
+    selected.className = 'selected color';
+    elementColor[index].addEventListener('click', colorSelect);
   }
 }
 const buttonGet = document.querySelector('.get');
 buttonGet.addEventListener('click', () => numberColors());
-// elementColor.addEventListener('click', () => colorSelect());
-
-// gera paleta de cores
-// function paleteColors() {
-  //   for (let index = 0; index < elementColor.length; index += 1) {
-    //   }
-    // }
-// paleteColors();
 
 // insere classe selecionada
 function colorSelect(event) {
@@ -100,4 +93,3 @@ buttonClick.addEventListener('click', () => {
     pixe[pix].style.backgroundColor = '';
   }
 });
-// teste de editor online do github
